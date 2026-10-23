@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=8beaf911-94b7-4e3b-805a-1fbc09d6fce2
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
 
 <!-- ==================== PRIMARY SEO ==================== -->
-<!-- The title is the strongest signal. Name + Role is perfect. -->
 <title>AHAYO Leonce – Computer Engineer & Software Developer</title>
 <meta name="description" content="Official portfolio of AHAYO Leonce, a computer engineer building reliable web apps, desktop software, Android apps, backend systems, and embedded IoT solutions.">
 <meta name="author" content="AHAYO Leonce">
@@ -17,9 +17,6 @@
 <link rel="canonical" href="https://ahayoleonce.netlify.app/">
 
 <!-- ==================== GOOGLE SEARCH CONSOLE ==================== -->
-<!-- 1. Go to search.google.com/search-console -->
-<!-- 2. Add your domain, choose "HTML tag" verification -->
-<!-- 3. Paste the content value from the tag Google gives you below -->
 <meta name="google-site-verification" content="EOAE1OyRYAkvsBio-cxcHj6V7p8tcPN6MDMgsz012-s" />
 
 <!-- ==================== OPEN GRAPH (Facebook, LinkedIn, Discord) ==================== -->
@@ -52,7 +49,6 @@
 <link rel="preload" as="image" href="img/loading.png">
 
 <!-- ==================== ADVANCED STRUCTURED DATA (KNOWLEDGE GRAPH) ==================== -->
-<!-- This tells Google: "This site is the absolute authority on AHAYO Leonce" -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -95,6 +91,7 @@
   ]
 }
 </script>
+
 <style>
 :root{
   --bg:#161618;
@@ -223,7 +220,6 @@ html.ld-on .hv{animation-play-state:paused}
 .ft-cta{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;padding:20px 0 60px;border-bottom:1px solid var(--line)}
 .ft-cta h2{font-size:clamp(32px,5vw,56px);font-weight:900;letter-spacing:-.03em;color:var(--text);line-height:1.1}
 .ft-cta h2 span{color:var(--muted)}
-/* Changed to 3 columns since 'Get in touch' is gone */
 .ft-cols{display:grid;grid-template-columns:1.5fr 1fr 1.5fr;gap:40px;padding:50px 0 20px;font-size:14px}
 .ft .logo{margin-bottom:20px;font-size:20px;display:inline-block}
 .ft-cols p{margin:0 0 24px;max-width:280px;line-height:1.6;font-weight:500}
@@ -339,25 +335,23 @@ html.ld-on .hv{animation-play-state:paused}
   
   .hero{padding:100px 20px}.hero p{font-size:16px;margin:20px auto 32px}
   
-  /* Button takes full width since it's alone now */
   .row{flex-direction:column;width:100%}
   .btn{padding:16px 24px;font-size:14px;width:100%}
   
-  /* Footer Layout Fix */
   .ft{padding:60px 0 24px}.ft-cta{padding:10px 0 36px;flex-direction:column;align-items:flex-start}.ft-cta .btn{width:auto}
   .ft-cols{grid-template-columns:1fr;gap:32px;}
   .ft-bot{flex-direction:column;gap:8px;text-align:center}
   
   .scroll-hint{bottom:20px;}
 
-  /* Mobile Back to Top */
   .back-to-top {
     bottom: calc(20px + env(safe-area-inset-bottom, 0px));
     right: 20px;
     padding: 10px 16px;
     font-size: 13px;
   }
-}.sr-only {
+}
+.sr-only {
   position: absolute;
   width: 1px; height: 1px;
   padding: 0; margin: -1px;
@@ -437,7 +431,6 @@ html.ld-on .hv{animation-play-state:paused}
   
   <div data-r style="--d:.2s">
     <h4>Follow Me</h4>
-    <!-- Container for JS to load JSON data -->
     <div class="soc" id="footerSocial"></div>
   </div>
  </div>
@@ -512,10 +505,7 @@ window.addEventListener('scroll', () => {
 }, { passive: true });
 
 backToTopBtn.addEventListener('click', () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
 /* ============ FETCH SOCIAL LINKS FOR FOOTER ============ */
@@ -539,7 +529,6 @@ async function loadFooterSocialLinks() {
 
   } catch (error) {
     console.error('Error loading social media links:', error);
-    // Fallback if fetch fails
     document.getElementById('footerSocial').innerHTML = `
       <span style="color:var(--muted); font-size:12px;">Social links unavailable</span>
     `;
@@ -548,5 +537,8 @@ async function loadFooterSocialLinks() {
 
 document.addEventListener('DOMContentLoaded', loadFooterSocialLinks);
 </script>
+
+<!-- Netlify HUD script — moved inside <body> (was after </html>) -->
+<script async src="/.netlify/scripts/hud?variant=public" data-nf-variant="public" data-netlify-site-id="8beaf911-94b7-4e3b-805a-1fbc09d6fce2" data-app-host="app.netlify.com" data-account-tier="free"></script>
 </body>
 </html>

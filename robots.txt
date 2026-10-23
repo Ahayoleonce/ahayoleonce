@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Search Console and Sitemap
+Sitemap: https://ahayoleonce.com/sitemap.xml

@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<!-- ==================== PRIMARY SEO ==================== -->
+<!-- The title is the strongest signal. Name + Role is perfect. -->
+<title>AHAYO Leonce – Computer Engineer & Software Developer</title>
+<meta name="description" content="Official portfolio of AHAYO Leonce, a computer engineer building reliable web apps, desktop software, Android apps, backend systems, and embedded IoT solutions.">
+<meta name="author" content="AHAYO Leonce">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="theme-color" content="#161618">
+<link rel="canonical" href="https://ahayoleonce.com/">
+
+<!-- ==================== GOOGLE SEARCH CONSOLE ==================== -->
+<!-- 1. Go to search.google.com/search-console -->
+<!-- 2. Add your domain, choose "HTML tag" verification -->
+<!-- 3. Paste the content value from the tag Google gives you below -->
+<meta name="google-site-verification" content="PASTE_YOUR_VERIFICATION_CODE_HERE">
+
+<!-- ==================== OPEN GRAPH (Facebook, LinkedIn, Discord) ==================== -->
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="AHAYO Leonce">
+<meta property="og:url" content="https://ahayoleonce.com/">
+<meta property="og:title" content="AHAYO Leonce – Computer Engineer">
+<meta property="og:description" content="Computer engineer building web, desktop, and Android apps that work from the circuit board to the browser.">
+<meta property="og:image" content="https://ahayoleonce.com/img/leo.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- ==================== TWITTER CARDS ==================== -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@ahayoleonce">
+<meta name="twitter:creator" content="@ahayoleonce">
+<meta name="twitter:title" content="AHAYO Leonce – Computer Engineer">
+<meta name="twitter:description" content="Computer engineer building web, desktop, and Android apps that work from the circuit board to the browser.">
+<meta name="twitter:image" content="https://ahayoleonce.com/img/leo.png">
+
+<!-- ==================== FAVICONS ==================== -->
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/favicon.png">
+
+<!-- ==================== PRECONNECT & FONTS ==================== -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Nunito:wght@400;500;600;700;800&family=Outfit:wght@700;800;900&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/loading.png">
+
+<!-- ==================== ADVANCED STRUCTURED DATA (KNOWLEDGE GRAPH) ==================== -->
+<!-- This tells Google: "This site is the absolute authority on AHAYO Leonce" -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://ahayoleonce.com/#website",
+      "url": "https://ahayoleonce.com/",
+      "name": "AHAYO Leonce",
+      "description": "Official portfolio of AHAYO Leonce",
+      "publisher": { "@id": "https://ahayoleonce.com/#person" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ahayoleonce.com/#person",
+      "name": "AHAYO Leonce",
+      "givenName": "Leonce",
+      "familyName": "AHAYO",
+      "url": "https://ahayoleonce.com/",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ahayoleonce.com/img/leo.png",
+        "width": 400,
+        "height": 500
+      },
+      "jobTitle": "Computer Engineer",
+      "description": "Computer engineer building web, desktop, and Android apps, backend systems, and embedded solutions.",
+      "knowsAbout": ["Software Engineering", "Web Development", "Mobile App Development", "Embedded Systems", "IoT", "Artificial Intelligence"],
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "University of Rwanda"
+      },
+      "sameAs": [
+        "https://github.com/Ahayoleonce",
+        "https://www.linkedin.com/in/ahayo-leonce",
+        "https://instagram.com/ah.leonce",
+        "https://wa.me/0795214659"
+      ]
+    }
+  ]
+}
+</script>
+<style>
+:root{
+  --bg:#161618;
+  --card:#2b2b2e;
+  --card2:#232326;
+  --text:#f2f4fa;
+  --muted:#8d91a0;
+  --line:rgba(255,255,255,.1);
+  --brand:#4d7cff;
+  --brand-soft:rgba(77,124,255,.14);
+  --ok:#4ade80;
+  --ease:cubic-bezier(.16,1,.3,1);
+  color-scheme:dark;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:100px}
+body{
+  font-family:'Nunito',system-ui,-apple-system,sans-serif;
+  background:var(--bg);color:var(--text);line-height:1.6;
+  overflow-x:hidden;-webkit-font-smoothing:antialiased;
+}
+body.lock{overflow:hidden;touch-action:none}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--brand);outline-offset:4px;border-radius:8px}
+::selection{background:var(--brand-soft);color:#fff}
+h1,h2,h3{margin:0;line-height:1.15;font-family:'Outfit',sans-serif}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+.ico{width:1.2em;height:1.2em;fill:currentColor;flex:none}
+.mono{font-family:'JetBrains Mono',ui-monospace,monospace}
+
+/* buttons */
+.btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--text);color:var(--bg);border:0;border-radius:12px;padding:16px 32px;font-family:'Nunito',sans-serif;font-weight:800;font-size:15px;cursor:pointer;transition:transform .25s var(--ease),box-shadow .25s}
+.btn:before{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.2) 50%,transparent 70%);transform:translateX(-120%);transition:transform .6s}
+.btn:hover:before{transform:translateX(120%)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 30px -8px rgba(255,255,255,.2)}
+.btn .ico{transition:transform .3s}.btn:hover .ico{transform:translateX(4px)}
+.btn.out{background:var(--card);border:1px solid var(--line);color:var(--text)}
+.btn.out:hover{background:var(--card2);border-color:rgba(255,255,255,.2);box-shadow:0 8px 24px rgba(0,0,0,.4)}
+
+/* reveal */
+[data-r]{opacity:0;transform:translateY(30px);transition:opacity .8s var(--ease),transform .8s var(--ease);transition-delay:var(--d,0s)}
+[data-r].in{opacity:1;transform:none}
+
+/* ============ TOPBAR ============ */
+.top{position:fixed;z-index:60;top:calc(16px + env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%);width:min(900px,calc(100% - 32px));transition:width .5s var(--ease),top .4s,transform .4s;animation:drop .9s var(--ease) both}
+@keyframes drop{from{transform:translate(-50%,-80px);opacity:0}}
+.nav{position:relative;display:flex;justify-content:space-between;align-items:center;background:var(--card);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid var(--line);border-radius:99px;padding:8px 10px 8px 20px;box-shadow:0 20px 40px -10px rgba(0,0,0,.6)}
+.logo{font-family:'Outfit',sans-serif;font-weight:800;font-size:18px;letter-spacing:.1em;color:var(--text);display:inline-flex;align-items:center;padding:6px 2px;transition:opacity .3s,color .3s}
+.logo:hover{opacity:.8;color:var(--brand)}
+.links{position:relative;display:flex;gap:4px;align-items:center;font-size:14px;font-weight:700;color:var(--muted)}
+.links a{position:relative;z-index:1;padding:10px 16px;border-radius:99px;transition:color .25s,background .25s}.links a:hover{color:var(--text);background:rgba(255,255,255,.06)}
+.links a.hire{background:var(--brand);color:#fff;margin-left:8px;padding:10px 20px;transition:transform .2s,box-shadow .2s,background .2s}.links a.hire:hover{transform:scale(1.03);box-shadow:0 8px 20px rgba(77,124,255,.3)}
+.burger{display:none;width:42px;height:42px;border:0;border-radius:50%;background:var(--card2);cursor:pointer;padding:0 11px 0 0;flex-direction:column;justify-content:center;align-items:flex-end;gap:5px;transition:background .3s}
+.burger:hover{background:var(--line)}
+.burger i{display:block;height:2px;border-radius:2px;background:var(--text);transition:transform .3s,width .3s,opacity .2s}
+.burger i:nth-child(1),.burger i:nth-child(3){width:18px}.burger i:nth-child(2){width:12px}
+.burger.x i:nth-child(1){transform:translateY(7px) rotate(45deg)}.burger.x i:nth-child(2){opacity:0;width:0}.burger.x i:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* Transparent Mobile Menu */
+@media(max-width:780px){
+  .burger{display:flex}
+  .links{
+    display:flex;flex-direction:column;align-items:stretch;
+    position:absolute;left:0;right:0;top:calc(100% + 16px);
+    background:transparent;
+    border:none;box-shadow:none;padding:0;gap:8px;
+    opacity:0;visibility:hidden;transform:translateY(-10px) scale(.98);
+    transition:.35s var(--ease);
+  }
+  .links.open{opacity:1;visibility:visible;transform:none}
+  .links a{
+    padding:14px 20px;
+    background:rgba(43,43,46,.85);
+    backdrop-filter:blur(20px);
+    border:1px solid var(--line);
+    border-radius:16px;
+    text-align:center;
+    box-shadow:0 10px 20px rgba(0,0,0,.3);
+  }
+  .links a.hire{
+    margin:8px 0 0;background:var(--brand);color:#fff;border:none;
+  }
+}
+
+/* ============ HERO (Full Screen) ============ */
+.hero{
+  position:relative;
+  min-height:100vh;
+  min-height:100dvh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:120px 24px;
+  background:var(--bg);
+  overflow:hidden;
+}
+.hero:after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent)}
+.hero-wrap{max-width:900px;margin:0 auto;position:relative;z-index:1}
+.hero p{font-size:clamp(18px,2.5vw,26px);color:var(--muted);max-width:750px;margin:0 auto 48px;line-height:1.6;font-weight:500}
+.row{display:flex;gap:16px;flex-wrap:wrap;justify-content:center}
+.hv{animation:up .9s var(--ease) both;animation-delay:var(--d)}@keyframes up{from{opacity:0;transform:translateY(20px)}}
+html.ld-on .hv{animation-play-state:paused}
+
+/* Scroll Hint */
+.scroll-hint{
+  position:absolute;bottom:40px;left:50%;transform:translateX(-50%);
+  display:flex;flex-direction:column;align-items:center;gap:8px;
+  color:var(--muted);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.15em;
+  animation:bounceHint 2.5s infinite;opacity:.8;cursor:pointer;z-index:2;
+  transition:color .3s;
+}
+.scroll-hint:hover{color:var(--text)}
+.scroll-hint svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+@keyframes bounceHint{
+  0%,20%,50%,80%,100%{transform:translate(-50%,0)}
+  40%{transform:translate(-50%,-12px)}
+  60%{transform:translate(-50%,-4px)}
+}
+
+/* ============ FOOTER ============ */
+.ft{position:relative;background:#0e0e10;color:var(--muted);overflow:hidden;padding:100px 0 30px;border-top:1px solid var(--line)}
+.ft .wrap{position:relative}
+.ft-cta{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;padding:20px 0 60px;border-bottom:1px solid var(--line)}
+.ft-cta h2{font-size:clamp(32px,5vw,56px);font-weight:900;letter-spacing:-.03em;color:var(--text);line-height:1.1}
+.ft-cta h2 span{color:var(--muted)}
+/* Changed to 3 columns since 'Get in touch' is gone */
+.ft-cols{display:grid;grid-template-columns:1.5fr 1fr 1.5fr;gap:40px;padding:50px 0 20px;font-size:14px}
+.ft .logo{margin-bottom:20px;font-size:20px;display:inline-block}
+.ft-cols p{margin:0 0 24px;max-width:280px;line-height:1.6;font-weight:500}
+.ft h4{color:var(--text);font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;margin:0 0 20px}
+.ft ul{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.ft ul a{position:relative;display:inline-block;transition:.2s var(--ease);font-weight:600}
+.ft ul a:hover{color:var(--text);transform:translateX(4px)}
+.soc{display:flex;gap:12px;flex-wrap:wrap}
+.soc a{width:44px;height:44px;border-radius:12px;background:var(--card);border:1px solid var(--line);display:grid;place-items:center;color:var(--text);font-weight:700;font-size:14px;transition:.3s var(--ease)}
+.soc a:hover{background:var(--brand);border-color:var(--brand);color:#fff;transform:translateY(-4px)}
+.soc a svg{width:20px;height:20px;fill:currentColor}
+.ft-word{font-family:'Outfit',sans-serif;font-size:clamp(80px,24vw,300px);font-weight:900;letter-spacing:-.06em;line-height:.85;text-align:center;margin:50px 0 0;color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.08);user-select:none}
+.ft-bot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;border-top:1px solid var(--line);padding-top:24px;margin-top:20px;color:#71717a;font-weight:500}
+.avail{display:inline-flex;align-items:center;gap:10px;background:rgba(74,222,128,.1);color:#4ade80;font-size:12px;font-weight:700;border-radius:99px;padding:8px 16px;border:1px solid rgba(74,222,128,.2)}
+.avail:before{content:"";width:8px;height:8px;border-radius:50%;background:#4ade80;animation:pu 2s infinite}
+@keyframes pu{50%{box-shadow:0 0 0 6px rgba(74,222,128,0)}0%{box-shadow:0 0 0 0 rgba(74,222,128,.4)}}
+
+/* ============ BACK TO TOP ============ */
+.back-to-top {
+  position: fixed;
+  bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+  right: 24px;
+  z-index: 90;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: rgba(43, 43, 46, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--line);
+  color: var(--text);
+  padding: 12px 20px;
+  border-radius: 99px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: opacity .4s var(--ease), transform .4s var(--ease), visibility .4s, background .2s;
+  box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5);
+}
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.back-to-top:hover {
+  background: var(--card2);
+  border-color: rgba(255,255,255,.25);
+}
+.back-to-top svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  animation: bounceUp 2s infinite;
+}
+@keyframes bounceUp {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-4px); }
+  60% { transform: translateY(-2px); }
+}
+
+/* ============ OPENING SCREEN ============ */
+.loader{
+  position:fixed;inset:0;z-index:200;
+  display:grid;place-items:center;
+  overflow:hidden;
+  background:var(--bg);
+  transition:opacity .75s var(--ease),transform .75s var(--ease);
+  animation:ldguard 0s 8s forwards;
+}
+.loader.exit{opacity:0;transform:scale(1.04);pointer-events:none}
+@keyframes ldguard{to{opacity:0;visibility:hidden;pointer-events:none}}
+.ld-box{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 24px}
+.ld-img-wrap{
+  position:relative;
+  opacity:0;
+  transform:translateX(-120vw) rotate(-8deg) scale(.8);
+  animation:ldin 1.6s cubic-bezier(.16,1,.3,1) .05s forwards;
+  will-change:transform,opacity;
+}
+@keyframes ldin{
+  0%{opacity:0;transform:translateX(-120vw) rotate(-8deg) scale(.8)}
+  60%{opacity:1}
+  80%{transform:translateX(3%) rotate(1.5deg) scale(1.02)}
+  100%{opacity:1;transform:translateX(0) rotate(0) scale(1)}
+}
+.ld-img{
+  display:block;width:min(320px,68vw);max-height:38vh;object-fit:contain;
+  filter:blur(10px) drop-shadow(0 24px 48px rgba(0,0,0,.6));
+  animation:ldclear 1.6s var(--ease) .05s forwards,ldfloat 5s ease-in-out 1.8s infinite;
+  will-change:filter,transform;
+}
+@keyframes ldclear{to{filter:blur(0) drop-shadow(0 24px 48px rgba(0,0,0,.6))}}
+@keyframes ldfloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.ld-dots{display:flex;gap:12px;margin-top:clamp(24px,5vh,48px);opacity:0;animation:ldfade .6s var(--ease) 1.3s forwards}
+.ld-dots span{width:10px;height:10px;border-radius:50%;background:var(--brand);animation:lddot 1.2s ease-in-out infinite}
+.ld-dots span:nth-child(2){background:var(--text);animation-delay:.15s}
+.ld-dots span:nth-child(3){animation-delay:.3s}
+@keyframes lddot{0%,100%{transform:translateY(0) scale(.6);opacity:.3}50%{transform:translateY(-12px) scale(1);opacity:1}}
+@keyframes ldfade{to{opacity:1}}
+@media(max-width:640px){.ld-img{width:min(260px,75vw);max-height:32vh}.ld-dots span{width:8px;height:8px}}
+@media(prefers-reduced-motion:reduce){.loader{display:none!important}}
+
+/* ============ MOBILE RESPONSIVE ============ */
+@media(max-width:640px){
+  .wrap{padding:0 20px}
+  .top{width:calc(100% - 24px);top:calc(12px + env(safe-area-inset-top,0px))}
+  .nav{padding:6px 8px 6px 16px}.logo{font-size:16px}.burger{width:36px;height:36px}
+  
+  .hero{padding:100px 20px}.hero p{font-size:16px;margin:20px auto 32px}
+  
+  /* Button takes full width since it's alone now */
+  .row{flex-direction:column;width:100%}
+  .btn{padding:16px 24px;font-size:14px;width:100%}
+  
+  /* Footer Layout Fix */
+  .ft{padding:60px 0 24px}.ft-cta{padding:10px 0 36px;flex-direction:column;align-items:flex-start}.ft-cta .btn{width:auto}
+  .ft-cols{grid-template-columns:1fr;gap:32px;}
+  .ft-bot{flex-direction:column;gap:8px;text-align:center}
+  
+  .scroll-hint{bottom:20px;}
+
+  /* Mobile Back to Top */
+  .back-to-top {
+    bottom: calc(20px + env(safe-area-inset-bottom, 0px));
+    right: 20px;
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+}.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></symbol>
+<symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></symbol>
+<symbol id="i-instagram" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></symbol>
+<symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></symbol>
+<symbol id="i-github" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></symbol>
+<symbol id="i-up" viewBox="0 0 24 24"><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/></symbol>
+</defs></svg>
+
+<!-- ============ OPENING SCREEN ============ -->
+<div class="loader" id="loader" role="status" aria-label="Loading">
+  <div class="ld-box">
+    <div class="ld-img-wrap">
+      <img class="ld-img" src="img/loading.png" alt="" onerror="this.style.display='none'">
+    </div>
+    <div class="ld-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+  </div>
+</div>
+<noscript><style>.loader{display:none!important}html.ld-on .hv{animation-play-state:running!important}</style></noscript>
+
+<!-- ============ TOPBAR ============ -->
+<header class="top" id="top"><div class="nav" id="nav">
+ <a class="logo" href="./" aria-label="AHAYO – home">AHAYO</a>
+ <button class="burger" id="bg" aria-label="Open menu" aria-expanded="false"><i></i><i></i><i></i></button>
+ <nav class="links" id="lk" aria-label="Main">
+   <a href="about">About</a>
+   <a href="projects">Projects</a>
+   <a href="skills">Skills</a>
+   <a href="journey">Journey</a>
+   <a class="hire" href="contact">Hire me</a>
+ </nav>
+</div></header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+ <div class="hero-wrap">
+  <p class="hv" style="--d:1.2s">Computer engineer. I build web apps, desktop and Android apps, backend systems and embedded solutions that work reliably from the circuit board to the browser.</p>
+  <div class="row hv" style="--d:1.4s">
+    <a class="btn" href="projects">See my projects<svg class="ico"><use href="#i-arrow"/></svg></a>
+  </div>
+ </div>
+<h1 class="sr-only">AHAYO Leonce - Computer Engineer</h1>
+ <!-- Scroll Hint -->
+ <a href="#footer" class="scroll-hint" aria-label="Scroll down">
+   <span>Scroll</span>
+   <svg viewBox="0 0 24 24"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
+ </a>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="ft" id="footer"><div class="wrap">
+ <div class="ft-cta" data-r><h2>Have an idea?<br><span>Let's make it real.</span></h2><a class="btn" href="contact">Start a project<svg class="ico"><use href="#i-arrow"/></svg></a></div>
+ 
+ <div class="ft-cols">
+  <div data-r>
+    <div class="logo">AHAYO</div>
+    <p>Computer engineer building web, desktop and Android apps and embedded systems.</p>
+    <span class="avail">Available for new projects</span>
+  </div>
+  
+  <div data-r style="--d:.1s">
+    <h4>Navigate</h4>
+    <ul><li><a href="about">About</a></li><li><a href="projects">Projects</a></li><li><a href="skills">Skills</a></li><li><a href="journey">Journey</a></li></ul>
+  </div>
+  
+  <div data-r style="--d:.2s">
+    <h4>Follow Me</h4>
+    <!-- Container for JS to load JSON data -->
+    <div class="soc" id="footerSocial"></div>
+  </div>
+ </div>
+ 
+ <div class="ft-word" aria-hidden="true">AHAYO</div>
+</div></footer>
+
+<!-- ============ BACK TO TOP ============ -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg><use href="#i-up"/></svg>
+  <span>Top</span>
+</button>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+
+/* ============ OPENING SCREEN ============ */
+(()=>{
+  const L=$('#loader');if(!L)return;
+  if(rm){L.remove();return;}
+  const MIN=2000,CAP=4200,t0=performance.now();
+  let done=false,pageReady=document.readyState==='complete';
+  document.documentElement.classList.add('ld-on');
+  document.body.classList.add('lock');
+
+  function finish(){
+    if(done)return;done=true;
+    setTimeout(()=>{
+      L.classList.add('exit');
+      document.body.classList.remove('lock');
+      document.documentElement.classList.remove('ld-on');
+      setTimeout(()=>{L.remove()},800);
+    },250);
+  }
+
+  addEventListener('load',()=>{pageReady=true},{once:true});
+  (function wait(){
+    if(done)return;
+    const el=performance.now()-t0;
+    if(el>=MIN&&pageReady)finish();
+    else if(el>CAP)finish();
+    else setTimeout(wait,120);
+  })();
+
+  const skip=()=>finish();
+  L.addEventListener('click',skip,{passive:true});
+  addEventListener('keydown',skip,{once:true});
+  addEventListener('wheel',skip,{once:true,passive:true});
+  addEventListener('touchstart',skip,{once:true,passive:true});
+})();
+
+/* reveal on scroll */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+$$('[data-r]').forEach(e=>io.observe(e));
+
+/* mobile menu */
+const bg=$('#bg'),lk=$('#lk');
+const menu=o=>{lk.classList.toggle('open',o);bg.classList.toggle('x',o);bg.setAttribute('aria-expanded',o);bg.setAttribute('aria-label',o?'Close menu':'Open menu')};
+bg.onclick=()=>menu(!lk.classList.contains('open'));
+$$('.links a').forEach(a=>a.addEventListener('click',()=>menu(false)));
+
+/* ============ BACK TO TOP LOGIC ============ */
+const backToTopBtn = $('#backToTop');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    backToTopBtn.classList.add('show');
+  } else {
+    backToTopBtn.classList.remove('show');
+  }
+}, { passive: true });
+
+backToTopBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
+/* ============ FETCH SOCIAL LINKS FOR FOOTER ============ */
+async function loadFooterSocialLinks() {
+  try {
+    const response = await fetch('assets/social-media.json');
+    if (!response.ok) throw new Error('Network response was not ok');
+    const data = await response.json();
+    
+    const container = document.getElementById('footerSocial');
+    
+    container.innerHTML = data.map(item => {
+      const target = item.url.startsWith('mailto:') ? '_self' : '_blank';
+      
+      return `
+        <a href="${item.url}" target="${target}" rel="noopener noreferrer" aria-label="${item.platform}" class="mono">
+          <svg class="ico"><use href="#${item.icon}"/></svg>
+        </a>
+      `;
+    }).join('');
+
+  } catch (error) {
+    console.error('Error loading social media links:', error);
+    // Fallback if fetch fails
+    document.getElementById('footerSocial').innerHTML = `
+      <span style="color:var(--muted); font-size:12px;">Social links unavailable</span>
+    `;
+  }
+}
+
+document.addEventListener('DOMContentLoaded', loadFooterSocialLinks);
+</script>
+</body>
+</html>

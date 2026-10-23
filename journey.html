@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Journey – AHAYO Leonce</title>
+<meta name="description" content="The professional and educational journey of AHAYO Leonce.">
+<meta name="theme-color" content="#161618">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Nunito:wght@400;500;600;700;800&family=Outfit:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#161618;
+  --card:#2b2b2e;
+  --card2:#232326;
+  --text:#f2f4fa;
+  --muted:#8d91a0;
+  --line:rgba(255,255,255,.1);
+  --brand:#4d7cff;
+  --brand-soft:rgba(77,124,255,.14);
+  --ease:cubic-bezier(.16,1,.3,1);
+  color-scheme:dark;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:100px}
+body{
+  font-family:'Nunito',system-ui,-apple-system,sans-serif;
+  background:var(--bg);color:var(--text);line-height:1.6;
+  overflow-x:hidden;-webkit-font-smoothing:antialiased;
+}
+body.lock{overflow:hidden;touch-action:none}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--brand);outline-offset:4px;border-radius:8px}
+::selection{background:var(--brand-soft);color:#fff}
+h1,h2,h3{margin:0;line-height:1.15;font-family:'Outfit',sans-serif}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+.ico{width:1.2em;height:1.2em;fill:currentColor;flex:none}
+.mono{font-family:'JetBrains Mono',ui-monospace,monospace}
+
+/* reveal */
+[data-r]{opacity:0;transform:translateY(30px);transition:opacity .8s var(--ease),transform .8s var(--ease);transition-delay:var(--d,0s)}
+[data-r].in{opacity:1;transform:none}
+
+/* ============ TOPBAR ============ */
+.top{position:fixed;z-index:60;top:calc(16px + env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%);width:min(900px,calc(100% - 32px));transition:width .5s var(--ease),top .4s,transform .4s;animation:drop .9s var(--ease) both}
+@keyframes drop{from{transform:translate(-50%,-80px);opacity:0}}
+.nav{position:relative;display:flex;justify-content:space-between;align-items:center;background:var(--card);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid var(--line);border-radius:99px;padding:8px 10px 8px 20px;box-shadow:0 20px 40px -10px rgba(0,0,0,.6)}
+.logo{font-family:'Outfit',sans-serif;font-weight:800;font-size:18px;letter-spacing:.1em;color:var(--text);display:inline-flex;align-items:center;padding:6px 2px;transition:opacity .3s,color .3s}
+.logo:hover{opacity:.8;color:var(--brand)}
+.links{position:relative;display:flex;gap:4px;align-items:center;font-size:14px;font-weight:700;color:var(--muted)}
+.links a{position:relative;z-index:1;padding:10px 16px;border-radius:99px;transition:color .25s,background .25s}
+.links a:hover{color:var(--text);background:rgba(255,255,255,.06)}
+.links a.hire{background:var(--brand);color:#fff;margin-left:8px;padding:10px 20px;transition:transform .2s,box-shadow .2s,background .2s}.links a.hire:hover{transform:scale(1.03);box-shadow:0 8px 20px rgba(77,124,255,.3)}
+.burger{display:none;width:42px;height:42px;border:0;border-radius:50%;background:var(--card2);cursor:pointer;padding:0 11px 0 0;flex-direction:column;justify-content:center;align-items:flex-end;gap:5px;transition:background .3s}
+.burger:hover{background:var(--line)}
+.burger i{display:block;height:2px;border-radius:2px;background:var(--text);transition:transform .3s,width .3s,opacity .2s}
+.burger i:nth-child(1),.burger i:nth-child(3){width:18px}.burger i:nth-child(2){width:12px}
+.burger.x i:nth-child(1){transform:translateY(7px) rotate(45deg)}.burger.x i:nth-child(2){opacity:0;width:0}.burger.x i:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* Transparent Mobile Menu */
+@media(max-width:780px){
+  .burger{display:flex}
+  .links{display:flex;flex-direction:column;align-items:stretch;position:absolute;left:0;right:0;top:calc(100% + 16px);background:transparent;border:none;box-shadow:none;padding:0;gap:8px;opacity:0;visibility:hidden;transform:translateY(-10px) scale(.98);transition:.35s var(--ease)}
+  .links.open{opacity:1;visibility:visible;transform:none}
+  .links a{padding:14px 20px;background:rgba(43,43,46,.85);backdrop-filter:blur(20px);border:1px solid var(--line);border-radius:16px;text-align:center;box-shadow:0 10px 20px rgba(0,0,0,.3)}
+  .links a.hire{margin:8px 0 0;background:var(--brand);color:#fff;border:none}
+}
+
+/* ============ PAGE HEADER ============ */
+.page-hero{
+  padding:180px 0 60px;
+  text-align:center;
+  background:var(--bg);
+  position:relative;
+}
+.page-hero h1{
+  font-size:clamp(48px,8vw,84px);
+  font-weight:900;
+  letter-spacing:-.03em;
+  line-height:1.05;
+  margin-bottom:24px;
+}
+.page-hero h1 span {
+  color: transparent;
+  background: linear-gradient(180deg,#fff 30%,var(--muted) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.page-hero p{
+  font-size:clamp(16px,2vw,20px);
+  color:var(--muted);
+  max-width:650px;
+  margin:0 auto;
+  font-weight:500;
+}
+
+/* ============ TIMELINE ============ */
+.timeline-section {
+  padding: 40px 0 120px;
+  background: var(--bg);
+}
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+/* Vertical Line */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background: var(--line);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+.timeline-item {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+.timeline-item.left { left: 0; }
+.timeline-item.right { left: 50%; }
+
+/* The Dots */
+.timeline-item .dot {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  right: -8px;
+  background-color: var(--bg);
+  border: 3px solid var(--brand);
+  top: 22px;
+  border-radius: 50%;
+  z-index: 1;
+  transition: transform .3s;
+}
+.timeline-item.right .dot {
+  left: -8px;
+}
+.timeline-item:hover .dot {
+  transform: scale(1.3);
+  background-color: var(--brand);
+}
+
+/* The Cards */
+.timeline-content {
+  padding: 24px 28px;
+  background: var(--card);
+  position: relative;
+  border-radius: 20px;
+  border: 1px solid var(--line);
+  transition: transform .3s var(--ease), border-color .3s, box-shadow .3s;
+}
+.timeline-content:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255,255,255,.2);
+  box-shadow: 0 16px 32px -10px rgba(0,0,0,.5);
+}
+
+/* Arrows pointing to the timeline */
+.timeline-item.left .timeline-content::after {
+  content: " ";
+  position: absolute;
+  top: 22px;
+  right: -8px;
+  border-width: 8px 0 8px 8px;
+  border-style: solid;
+  border-color: transparent transparent transparent var(--card);
+  z-index: 1;
+}
+.timeline-item.right .timeline-content::after {
+  content: " ";
+  position: absolute;
+  top: 22px;
+  left: -8px;
+  border-width: 8px 8px 8px 0;
+  border-style: solid;
+  border-color: transparent var(--card) transparent transparent;
+}
+
+/* Typography inside cards */
+.timeline-date {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--brand);
+  background: var(--brand-soft);
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+.timeline-content h3 {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+.timeline-content h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+.timeline-content p {
+  font-size: 14.5px;
+  color: var(--muted);
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+/* ============ BACK TO TOP ============ */
+.back-to-top {
+  position: fixed;
+  bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+  right: 24px;
+  z-index: 90;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: rgba(43, 43, 46, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--line);
+  color: var(--text);
+  padding: 12px 20px;
+  border-radius: 99px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: opacity .4s var(--ease), transform .4s var(--ease), visibility .4s, background .2s;
+  box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5);
+}
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.back-to-top:hover {
+  background: var(--card2);
+  border-color: rgba(255,255,255,.25);
+}
+.back-to-top svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  animation: bounceUp 2s infinite;
+}
+@keyframes bounceUp {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-4px); }
+  60% { transform: translateY(-2px); }
+}
+
+/* ============ OPENING SCREEN ============ */
+.loader{
+  position:fixed;inset:0;
+  z-index:50; /* Under topbar */
+  display:grid;place-items:center;
+  overflow:hidden;
+  background:var(--bg);
+  transition:opacity .75s var(--ease),transform .75s var(--ease);
+  animation:ldguard 0s 8s forwards;
+}
+.loader.exit{opacity:0;transform:scale(1.04);pointer-events:none}
+@keyframes ldguard{to{opacity:0;visibility:hidden;pointer-events:none}}
+.ld-box{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 24px}
+.ld-img-wrap{position:relative;opacity:0;transform:translateX(-120vw) rotate(-8deg) scale(.8);animation:ldin 1.6s cubic-bezier(.16,1,.3,1) .05s forwards;will-change:transform,opacity}
+@keyframes ldin{0%{opacity:0;transform:translateX(-120vw) rotate(-8deg) scale(.8)}60%{opacity:1}80%{transform:translateX(3%) rotate(1.5deg) scale(1.02)}100%{opacity:1;transform:translateX(0) rotate(0) scale(1)}}
+.ld-img{display:block;width:min(320px,68vw);max-height:38vh;object-fit:contain;filter:blur(10px) drop-shadow(0 24px 48px rgba(0,0,0,.6));animation:ldclear 1.6s var(--ease) .05s forwards,ldfloat 5s ease-in-out 1.8s infinite;will-change:filter,transform}
+@keyframes ldclear{to{filter:blur(0) drop-shadow(0 24px 48px rgba(0,0,0,.6))}}
+@keyframes ldfloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.ld-dots{display:flex;gap:12px;margin-top:clamp(24px,5vh,48px);opacity:0;animation:ldfade .6s var(--ease) 1.3s forwards}
+.ld-dots span{width:10px;height:10px;border-radius:50%;background:var(--brand);animation:lddot 1.2s ease-in-out infinite}
+.ld-dots span:nth-child(2){background:var(--text);animation-delay:.15s}
+.ld-dots span:nth-child(3){animation-delay:.3s}
+@keyframes lddot{0%,100%{transform:translateY(0) scale(.6);opacity:.3}50%{transform:translateY(-12px) scale(1);opacity:1}}
+@keyframes ldfade{to{opacity:1}}
+@media(max-width:640px){.ld-img{width:min(260px,75vw);max-height:32vh}.ld-dots span{width:8px;height:8px}}
+@media(prefers-reduced-motion:reduce){.loader{display:none!important}}
+
+/* ============ MOBILE RESPONSIVE (TIMELINE) ============ */
+@media(max-width:768px){
+  .wrap{padding:0 20px}
+  .top{width:calc(100% - 24px);top:calc(12px + env(safe-area-inset-top,0px))}
+  .nav{padding:6px 8px 6px 16px}.logo{font-size:16px}.burger{width:36px;height:36px}
+  
+  .page-hero{padding:140px 16px 40px}
+  .page-hero h1{font-size:clamp(36px,10vw,48px);margin-bottom:16px}
+  .page-hero p{font-size:14px}
+  
+  /* Timeline Mobile Layout */
+  .timeline::after {
+    left: 20px;
+  }
+  .timeline-item {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 0;
+  }
+  .timeline-item.right {
+    left: 0%;
+  }
+  .timeline-item .dot {
+    left: 12px !important;
+    right: auto !important;
+  }
+  
+  /* Remove arrows on mobile */
+  .timeline-item.left .timeline-content::after,
+  .timeline-item.right .timeline-content::after {
+    display: none;
+  }
+  
+  .timeline-content {
+    padding: 20px;
+  }
+  .timeline-content h3 { font-size: 18px; }
+  .timeline-content p { font-size: 13.5px; }
+
+  /* Mobile Back to Top */
+  .back-to-top {
+    bottom: calc(20px + env(safe-area-inset-bottom, 0px));
+    right: 20px;
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-up" viewBox="0 0 24 24"><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/></symbol>
+</defs></svg>
+
+<!-- ============ OPENING SCREEN ============ -->
+<div class="loader" id="loader" role="status" aria-label="Loading">
+  <div class="ld-box">
+    <div class="ld-img-wrap">
+      <img class="ld-img" src="img/loading.png" alt="" onerror="this.style.display='none'">
+    </div>
+    <div class="ld-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+  </div>
+</div>
+
+<!-- ============ TOPBAR ============ -->
+<header class="top" id="top"><div class="nav" id="nav">
+ <a class="logo" href="./" aria-label="AHAYO – home">AHAYO</a>
+ <button class="burger" id="bg" aria-label="Open menu" aria-expanded="false"><i></i><i></i><i></i></button>
+ <nav class="links" id="lk" aria-label="Main">
+   <a href="./">Home</a>
+   <a href="about">About</a>
+   <a href="projects">Projects</a>
+   <a href="skills">Skills</a>
+   <a class="hire" href="contact">Hire me</a>
+ </nav>
+</div></header>
+
+<!-- ============ PAGE HEADER ============ -->
+<section class="page-hero">
+  <div class="wrap" data-r>
+    <h1>My <span>Journey</span></h1>
+    <p>The educational milestones and professional experiences that have shaped my engineering career.</p>
+  </div>
+</section>
+
+<!-- ============ TIMELINE SECTION ============ -->
+<section class="timeline-section">
+  <div class="wrap">
+    <div class="timeline" id="timelineContainer">
+      <!-- Items will be injected here via JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ============ BACK TO TOP ============ -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg><use href="#i-up"/></svg>
+  <span>Top</span>
+</button>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+
+/* ============ OPENING SCREEN ============ */
+(()=>{
+  const L=$('#loader');if(!L)return;
+  if(rm){L.remove();return;}
+  const MIN=2000,CAP=4200,t0=performance.now();
+  let done=false,pageReady=document.readyState==='complete';
+  document.documentElement.classList.add('ld-on');
+  document.body.classList.add('lock');
+
+  function finish(){
+    if(done)return;done=true;
+    setTimeout(()=>{
+      L.classList.add('exit');
+      document.body.classList.remove('lock');
+      document.documentElement.classList.remove('ld-on');
+      setTimeout(()=>{L.remove()},800);
+    },250);
+  }
+
+  addEventListener('load',()=>{pageReady=true},{once:true});
+  (function wait(){
+    if(done)return;
+    const el=performance.now()-t0;
+    if(el>=MIN&&pageReady)finish();
+    else if(el>CAP)finish();
+    else setTimeout(wait,120);
+  })();
+
+  const skip=()=>finish();
+  L.addEventListener('click',skip,{passive:true});
+  addEventListener('keydown',skip,{once:true});
+  addEventListener('wheel',skip,{once:true,passive:true});
+  addEventListener('touchstart',skip,{once:true,passive:true});
+})();
+
+/* reveal on scroll */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+// We will observe items after they are loaded
+
+/* mobile menu */
+const bg=$('#bg'),lk=$('#lk');
+const menu=o=>{lk.classList.toggle('open',o);bg.classList.toggle('x',o);bg.setAttribute('aria-expanded',o);bg.setAttribute('aria-label',o?'Close menu':'Open menu')};
+bg.onclick=()=>menu(!lk.classList.contains('open'));
+$$('.links a').forEach(a=>a.addEventListener('click',()=>menu(false)));
+
+/* ============ FETCH JOURNEY DATA ============ */
+async function loadJourneyData() {
+  try {
+    const response = await fetch('assets/journey.json');
+    if (!response.ok) throw new Error('Network response was not ok');
+    const data = await response.json();
+
+    const container = document.getElementById('timelineContainer');
+    
+    // Generate HTML for each timeline item
+    const html = data.map((item, index) => {
+      const side = index % 2 === 0 ? 'left' : 'right';
+      const delay = index * 0.1;
+      
+      return `
+        <div class="timeline-item ${side}" data-r style="--d:${delay}s">
+          <div class="dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">${item.date}</span>
+            <h3>${item.title}</h3>
+            <h4>${item.subtitle}</h4>
+            <p>${item.description}</p>
+          </div>
+        </div>
+      `;
+    }).join('');
+
+    container.innerHTML = html;
+
+    // Re-initialize the intersection observer for the newly created items
+    $$('[data-r]').forEach(e=>io.observe(e));
+
+  } catch (error) {
+    console.error('Error loading journey data:', error);
+    // Fallback text
+    document.getElementById('timelineContainer').innerHTML = `
+      <div style="text-align:center; padding: 40px; color: var(--muted);">
+        <p>Unable to load journey data. Please ensure the site is running on a local server.</p>
+      </div>
+    `;
+  }
+}
+
+/* ============ BACK TO TOP LOGIC ============ */
+const backToTopBtn = $('#backToTop');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    backToTopBtn.classList.add('show');
+  } else {
+    backToTopBtn.classList.remove('show');
+  }
+}, { passive: true });
+
+backToTopBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
+// Start the data loading process
+document.addEventListener('DOMContentLoaded', loadJourneyData);
+</script>
+</body>
+</html>

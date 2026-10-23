@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Skills – AHAYO Leonce</title>
+<meta name="description" content="Skills and expertise of AHAYO Leonce.">
+<meta name="theme-color" content="#161618">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Nunito:wght@400;500;600;700;800&family=Outfit:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#161618;
+  --card:#2b2b2e;
+  --card2:#232326;
+  --text:#f2f4fa;
+  --muted:#8d91a0;
+  --line:rgba(255,255,255,.1);
+  --brand:#4d7cff;
+  --brand-soft:rgba(77,124,255,.14);
+  --ease:cubic-bezier(.16,1,.3,1);
+  color-scheme:dark;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:100px}
+body{
+  font-family:'Nunito',system-ui,-apple-system,sans-serif;
+  background:var(--bg);color:var(--text);line-height:1.6;
+  overflow-x:hidden;-webkit-font-smoothing:antialiased;
+}
+body.lock{overflow:hidden;touch-action:none}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--brand);outline-offset:4px;border-radius:8px}
+::selection{background:var(--brand-soft);color:#fff}
+h1,h2,h3{margin:0;line-height:1.15;font-family:'Outfit',sans-serif}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+.ico{width:1.2em;height:1.2em;fill:currentColor;flex:none}
+.mono{font-family:'JetBrains Mono',ui-monospace,monospace}
+
+/* buttons */
+.btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--text);color:var(--bg);border:0;border-radius:12px;padding:16px 32px;font-family:'Nunito',sans-serif;font-weight:800;font-size:15px;cursor:pointer;transition:transform .25s var(--ease),box-shadow .25s}
+.btn:before{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.2) 50%,transparent 70%);transform:translateX(-120%);transition:transform .6s}
+.btn:hover:before{transform:translateX(120%)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 30px -8px rgba(255,255,255,.2)}
+.btn .ico{transition:transform .3s}.btn:hover .ico{transform:translateX(4px)}
+
+/* reveal */
+[data-r]{opacity:0;transform:translateY(30px);transition:opacity .8s var(--ease),transform .8s var(--ease);transition-delay:var(--d,0s)}
+[data-r].in{opacity:1;transform:none}
+
+/* ============ TOPBAR ============ */
+.top{position:fixed;z-index:60;top:calc(16px + env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%);width:min(900px,calc(100% - 32px));transition:width .5s var(--ease),top .4s,transform .4s;animation:drop .9s var(--ease) both}
+@keyframes drop{from{transform:translate(-50%,-80px);opacity:0}}
+.nav{position:relative;display:flex;justify-content:space-between;align-items:center;background:var(--card);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid var(--line);border-radius:99px;padding:8px 10px 8px 20px;box-shadow:0 20px 40px -10px rgba(0,0,0,.6)}
+.logo{font-family:'Outfit',sans-serif;font-weight:800;font-size:18px;letter-spacing:.1em;color:var(--text);display:inline-flex;align-items:center;padding:6px 2px;transition:opacity .3s,color .3s}
+.logo:hover{opacity:.8;color:var(--brand)}
+.links{position:relative;display:flex;gap:4px;align-items:center;font-size:14px;font-weight:700;color:var(--muted)}
+.links a{position:relative;z-index:1;padding:10px 16px;border-radius:99px;transition:color .25s,background .25s}
+.links a:hover{color:var(--text);background:rgba(255,255,255,.06)}
+.links a.hire{background:var(--brand);color:#fff;margin-left:8px;padding:10px 20px;transition:transform .2s,box-shadow .2s,background .2s}.links a.hire:hover{transform:scale(1.03);box-shadow:0 8px 20px rgba(77,124,255,.3)}
+.burger{display:none;width:42px;height:42px;border:0;border-radius:50%;background:var(--card2);cursor:pointer;padding:0 11px 0 0;flex-direction:column;justify-content:center;align-items:flex-end;gap:5px;transition:background .3s}
+.burger:hover{background:var(--line)}
+.burger i{display:block;height:2px;border-radius:2px;background:var(--text);transition:transform .3s,width .3s,opacity .2s}
+.burger i:nth-child(1),.burger i:nth-child(3){width:18px}.burger i:nth-child(2){width:12px}
+.burger.x i:nth-child(1){transform:translateY(7px) rotate(45deg)}.burger.x i:nth-child(2){opacity:0;width:0}.burger.x i:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* Transparent Mobile Menu */
+@media(max-width:780px){
+  .burger{display:flex}
+  .links{display:flex;flex-direction:column;align-items:stretch;position:absolute;left:0;right:0;top:calc(100% + 16px);background:transparent;border:none;box-shadow:none;padding:0;gap:8px;opacity:0;visibility:hidden;transform:translateY(-10px) scale(.98);transition:.35s var(--ease)}
+  .links.open{opacity:1;visibility:visible;transform:none}
+  .links a{padding:14px 20px;background:rgba(43,43,46,.85);backdrop-filter:blur(20px);border:1px solid var(--line);border-radius:16px;text-align:center;box-shadow:0 10px 20px rgba(0,0,0,.3)}
+  .links a.hire{margin:8px 0 0;background:var(--brand);color:#fff;border:none}
+}
+
+/* ============ PAGE HEADER ============ */
+.page-hero{
+  padding:180px 0 60px;
+  text-align:center;
+  background:var(--bg);
+  position:relative;
+}
+.page-hero h1{
+  font-size:clamp(48px,8vw,84px);
+  font-weight:900;
+  letter-spacing:-.03em;
+  line-height:1.05;
+  margin-bottom:24px;
+}
+.page-hero h1 span {
+  color: transparent;
+  background: linear-gradient(180deg,#fff 30%,var(--muted) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.page-hero p{
+  font-size:clamp(16px,2vw,20px);
+  color:var(--muted);
+  max-width:650px;
+  margin:0 auto;
+  font-weight:500;
+}
+
+/* ============ SKILLS GRID ============ */
+.skills-section { padding: 20px 0 80px; background: var(--bg); }
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+@media(max-width:768px){ .skills-grid { grid-template-columns: 1fr; gap: 16px; } }
+
+.skill-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 32px;
+  transition: transform .4s var(--ease), border-color .4s, box-shadow .4s;
+}
+.skill-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255,255,255,.2);
+  box-shadow: 0 20px 40px -10px rgba(0,0,0,.5);
+}
+.skill-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.skill-icon {
+  width: 44px; height: 44px;
+  border-radius: 12px;
+  background: var(--card2);
+  border: 1px solid var(--line);
+  display: grid; place-items: center;
+  color: var(--text);
+  transition: background .3s, color .3s;
+}
+.skill-card:hover .skill-icon {
+  background: var(--brand); color: #fff; border-color: transparent;
+}
+.skill-card h3 { font-size: 22px; font-weight: 800; }
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.skill-tags span {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 500;
+  background: rgba(255,255,255,.05);
+  color: var(--muted);
+  padding: 6px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  transition: .2s;
+}
+.skill-card:hover .skill-tags span {
+  background: rgba(255,255,255,.1);
+  color: var(--text);
+}
+
+/* ============ WHAT I CAN DO ============ */
+.services-section {
+  padding: 80px 0;
+  background: var(--bg);
+  border-top: 1px solid var(--line);
+}
+.sec-title {
+  font-size: clamp(32px,4vw,48px);
+  font-weight: 900;
+  margin-bottom: 16px;
+  letter-spacing: -.02em;
+}
+.sec-desc {
+  font-size: 16px;
+  color: var(--muted);
+  margin-bottom: 48px;
+  font-weight: 500;
+  max-width: 600px;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+@media(max-width:768px){ .services-grid { grid-template-columns: 1fr; gap: 16px; } }
+.service-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 32px;
+  transition: transform .4s var(--ease), border-color .4s, box-shadow .4s;
+}
+.service-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255,255,255,.2);
+  box-shadow: 0 20px 40px -10px rgba(0,0,0,.5);
+}
+.service-icon {
+  width: 48px; height: 48px;
+  border-radius: 14px;
+  background: var(--card2);
+  border: 1px solid var(--line);
+  display: grid; place-items: center;
+  color: var(--text);
+  margin-bottom: 20px;
+  transition: background .3s, color .3s, transform .4s;
+}
+.service-card:hover .service-icon {
+  background: var(--brand); color: #fff; transform: scale(1.05);
+}
+.service-card h3 { font-size: 20px; font-weight: 800; margin-bottom: 12px; }
+.service-card p { font-size: 15px; color: var(--muted); line-height: 1.6; font-weight: 500; }
+
+/* ============ I CAN TEACH ============ */
+.teach-section {
+  padding: 80px 0 120px;
+  background: var(--bg);
+}
+.teach-banner {
+  position: relative;
+  background: linear-gradient(135deg, rgba(77,124,255,.1) 0%, var(--card) 100%);
+  border: 1px solid rgba(77,124,255,.3);
+  border-radius: 32px;
+  padding: 60px 48px;
+  display: flex;
+  justify-content: center; /* Centered since button is gone */
+  overflow: hidden;
+}
+.teach-banner:before {
+  content: "";
+  position: absolute;
+  top: -50%; left: -10%;
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(77,124,255,.15) 0%, transparent 60%);
+  z-index: 0;
+  pointer-events: none;
+}
+.teach-content { position: relative; z-index: 1; max-width: 700px; width: 100%; text-align: left; }
+.teach-banner h2 { font-size: clamp(28px,4vw,42px); font-weight: 900; margin-bottom: 16px; }
+.teach-banner p { font-size: 17px; color: var(--muted); line-height: 1.6; font-weight: 500; margin-bottom: 24px;}
+.teach-banner p strong { color: var(--text); }
+.teach-list { 
+  list-style: none; padding: 0; margin: 0; 
+  display: grid; grid-template-columns: 1fr 1fr; gap: 12px; 
+}
+.teach-list li {
+  display: flex; align-items: flex-start; gap: 8px;
+  font-size: 14.5px; font-weight: 700; color: var(--text);
+}
+.teach-list li svg { width: 18px; height: 18px; fill: var(--brand); flex-shrink: 0; margin-top: 3px; }
+
+@media(max-width:900px){
+  .teach-banner { padding: 40px 24px; }
+}
+
+/* ============ BACK TO TOP ============ */
+.back-to-top {
+  position: fixed;
+  bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+  right: 24px;
+  z-index: 90;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: rgba(43, 43, 46, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--line);
+  color: var(--text);
+  padding: 12px 20px;
+  border-radius: 99px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: opacity .4s var(--ease), transform .4s var(--ease), visibility .4s, background .2s;
+  box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5);
+}
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.back-to-top:hover {
+  background: var(--card2);
+  border-color: rgba(255,255,255,.25);
+}
+.back-to-top svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  animation: bounceUp 2s infinite;
+}
+@keyframes bounceUp {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-4px); }
+  60% { transform: translateY(-2px); }
+}
+
+/* ============ OPENING SCREEN ============ */
+.loader{
+  position:fixed;inset:0;
+  z-index:50; /* Under topbar */
+  display:grid;place-items:center;
+  overflow:hidden;
+  background:var(--bg);
+  transition:opacity .75s var(--ease),transform .75s var(--ease);
+  animation:ldguard 0s 8s forwards;
+}
+.loader.exit{opacity:0;transform:scale(1.04);pointer-events:none}
+@keyframes ldguard{to{opacity:0;visibility:hidden;pointer-events:none}}
+.ld-box{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 24px}
+.ld-img-wrap{position:relative;opacity:0;transform:translateX(-120vw) rotate(-8deg) scale(.8);animation:ldin 1.6s cubic-bezier(.16,1,.3,1) .05s forwards;will-change:transform,opacity}
+@keyframes ldin{0%{opacity:0;transform:translateX(-120vw) rotate(-8deg) scale(.8)}60%{opacity:1}80%{transform:translateX(3%) rotate(1.5deg) scale(1.02)}100%{opacity:1;transform:translateX(0) rotate(0) scale(1)}}
+.ld-img{display:block;width:min(320px,68vw);max-height:38vh;object-fit:contain;filter:blur(10px) drop-shadow(0 24px 48px rgba(0,0,0,.6));animation:ldclear 1.6s var(--ease) .05s forwards,ldfloat 5s ease-in-out 1.8s infinite;will-change:filter,transform}
+@keyframes ldclear{to{filter:blur(0) drop-shadow(0 24px 48px rgba(0,0,0,.6))}}
+@keyframes ldfloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.ld-dots{display:flex;gap:12px;margin-top:clamp(24px,5vh,48px);opacity:0;animation:ldfade .6s var(--ease) 1.3s forwards}
+.ld-dots span{width:10px;height:10px;border-radius:50%;background:var(--brand);animation:lddot 1.2s ease-in-out infinite}
+.ld-dots span:nth-child(2){background:var(--text);animation-delay:.15s}
+.ld-dots span:nth-child(3){animation-delay:.3s}
+@keyframes lddot{0%,100%{transform:translateY(0) scale(.6);opacity:.3}50%{transform:translateY(-12px) scale(1);opacity:1}}
+@keyframes ldfade{to{opacity:1}}
+@media(max-width:640px){.ld-img{width:min(260px,75vw);max-height:32vh}.ld-dots span{width:8px;height:8px}}
+@media(prefers-reduced-motion:reduce){.loader{display:none!important}}
+
+/* ============ MOBILE RESPONSIVE ============ */
+@media(max-width:640px){
+  .wrap{padding:0 20px}
+  .top{width:calc(100% - 24px);top:calc(12px + env(safe-area-inset-top,0px))}
+  .nav{padding:6px 8px 6px 16px}.logo{font-size:16px}.burger{width:36px;height:36px}
+  
+  .page-hero{padding:140px 16px 40px}
+  .page-hero h1{font-size:clamp(36px,10vw,48px);margin-bottom:16px}
+  .page-hero p{font-size:14px}
+  
+  .skill-card, .service-card { padding: 24px; }
+  .skill-header { gap: 12px; margin-bottom: 20px; }
+  .skill-card h3 { font-size: 18px; }
+  .service-card h3 { font-size: 18px; }
+  .service-card p { font-size: 14px; }
+  .skill-tags span { font-size: 11px; padding: 4px 10px; }
+  
+  .teach-banner { padding: 32px 20px; border-radius: 24px; }
+  .teach-banner h2 { font-size: 26px; }
+  .teach-banner p { font-size: 15px; margin-bottom: 20px; }
+  .teach-list { grid-template-columns: 1fr; gap: 10px; }
+  .teach-list li { font-size: 13.5px; }
+
+  /* Mobile Back to Top */
+  .back-to-top {
+    bottom: calc(20px + env(safe-area-inset-bottom, 0px));
+    right: 20px;
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></symbol>
+<symbol id="i-code" viewBox="0 0 24 24"><path d="M9.4 16.6 4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0 4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></symbol>
+<symbol id="i-layout" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM7 7h4v4H7V7zm0 6h4v4H7v-4zm6-6h4v4h-4V7zm0 6h4v4h-4v-4z"/></symbol>
+<symbol id="i-server" viewBox="0 0 24 24"><path d="M20 13H4c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2zm0 6H4v-4h16v4zM20 3H4c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 6H4V5h16v4zM6 16h2v2H6v-2zM6 6h2v2H6V6z"/></symbol>
+<symbol id="i-smartphone" viewBox="0 0 24 24"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></symbol>
+<symbol id="i-cpu" viewBox="0 0 24 24"><path d="M15 9H9v6h6V9zm-2 4h-2v-2h2v2zm8-2V9h-2V7c0-1.1-.9-2-2-2h-2V3h-2v2h-2V3H9v2H7c-1.1 0-2 .9-2 2v2H3v2h2v2H3v2h2v2c0 1.1.9 2 2 2h2v2h2v-2h2v2h2v-2h2c1.1 0 2-.9 2-2v-2h2v-2h-2v-2h2zm-4 6H7V7h10v10z"/></symbol>
+<symbol id="i-brain" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></symbol>
+<symbol id="i-up" viewBox="0 0 24 24"><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/></symbol>
+</defs></svg>
+
+<!-- ============ OPENING SCREEN ============ -->
+<div class="loader" id="loader" role="status" aria-label="Loading">
+  <div class="ld-box">
+    <div class="ld-img-wrap">
+      <img class="ld-img" src="img/loading.png" alt="" onerror="this.style.display='none'">
+    </div>
+    <div class="ld-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+  </div>
+</div>
+
+<!-- ============ TOPBAR ============ -->
+<header class="top" id="top"><div class="nav" id="nav">
+ <a class="logo" href="./" aria-label="AHAYO – home">AHAYO</a>
+ <button class="burger" id="bg" aria-label="Open menu" aria-expanded="false"><i></i><i></i><i></i></button>
+ <nav class="links" id="lk" aria-label="Main">
+   <a href="./">Home</a>
+   <a href="about">About</a>
+   <a href="projects">Projects</a>
+   <a href="journey">Journey</a>
+   <a class="hire" href="contact">Hire me</a>
+ </nav>
+</div></header>
+
+<!-- ============ PAGE HEADER ============ -->
+<section class="page-hero">
+  <div class="wrap" data-r>
+    <h1>My <span>Skills</span></h1>
+    <p>A comprehensive toolkit spanning from low-level hardware engineering to high-level web, mobile, and AI application development.</p>
+  </div>
+</section>
+
+<!-- ============ SKILLS GRID ============ -->
+<section class="skills-section">
+  <div class="wrap">
+    <div class="skills-grid" id="skillsGrid">
+      <!-- Injected via JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHAT I CAN DO ============ -->
+<section class="services-section">
+  <div class="wrap">
+    <h2 class="sec-title" data-r>What I can do</h2>
+    <p class="sec-desc" data-r style="--d:.1s">From the initial idea to the final deployment, I build end-to-end systems that solve real problems.</p>
+    
+    <div class="services-grid" id="servicesGrid">
+      <!-- Injected via JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ============ I CAN TEACH ============ -->
+<section class="teach-section">
+  <div class="wrap">
+    <div class="teach-banner" data-r id="teachBanner">
+      <!-- Injected via JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ============ BACK TO TOP ============ -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg><use href="#i-up"/></svg>
+  <span>Top</span>
+</button>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+
+/* ============ OPENING SCREEN ============ */
+(()=>{
+  const L=$('#loader');if(!L)return;
+  if(rm){L.remove();return;}
+  const MIN=2000,CAP=4200,t0=performance.now();
+  let done=false,pageReady=document.readyState==='complete';
+  document.documentElement.classList.add('ld-on');
+  document.body.classList.add('lock');
+
+  function finish(){
+    if(done)return;done=true;
+    setTimeout(()=>{
+      L.classList.add('exit');
+      document.body.classList.remove('lock');
+      document.documentElement.classList.remove('ld-on');
+      setTimeout(()=>{L.remove()},800);
+    },250);
+  }
+
+  addEventListener('load',()=>{pageReady=true},{once:true});
+  (function wait(){
+    if(done)return;
+    const el=performance.now()-t0;
+    if(el>=MIN&&pageReady)finish();
+    else if(el>CAP)finish();
+    else setTimeout(wait,120);
+  })();
+
+  const skip=()=>finish();
+  L.addEventListener('click',skip,{passive:true});
+  addEventListener('keydown',skip,{once:true});
+  addEventListener('wheel',skip,{once:true,passive:true});
+  addEventListener('touchstart',skip,{once:true,passive:true});
+})();
+
+/* reveal on scroll */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+
+/* mobile menu */
+const bg=$('#bg'),lk=$('#lk');
+const menu=o=>{lk.classList.toggle('open',o);bg.classList.toggle('x',o);bg.setAttribute('aria-expanded',o);bg.setAttribute('aria-label',o?'Close menu':'Open menu')};
+bg.onclick=()=>menu(!lk.classList.contains('open'));
+$$('.links a').forEach(a=>a.addEventListener('click',()=>menu(false)));
+
+/* ============ LOAD SKILLS DATA ============ */
+async function loadSkillsData() {
+  try {
+    const response = await fetch('assets/skills.json');
+    if (!response.ok) throw new Error('Network response was not ok');
+    const data = await response.json();
+
+    // 1. Render Skills Grid
+    const skillsGrid = document.getElementById('skillsGrid');
+    skillsGrid.innerHTML = data.skillsGrid.map((s, i) => `
+      <div class="skill-card" data-r style="--d:${i * 0.1}s">
+        <div class="skill-header">
+          <div class="skill-icon"><svg class="ico"><use href="#${s.icon}"/></svg></div>
+          <h3>${s.title}</h3>
+        </div>
+        <div class="skill-tags">
+          ${s.tags.map(t => `<span>${t}</span>`).join('')}
+        </div>
+      </div>
+    `).join('');
+
+    // 2. Render What I Can Do
+    const servicesGrid = document.getElementById('servicesGrid');
+    servicesGrid.innerHTML = data.whatICanDo.map((s, i) => `
+      <div class="service-card" data-r style="--d:${0.15 + i * 0.1}s">
+        <div class="service-icon"><svg class="ico"><use href="#${s.icon}"/></svg></div>
+        <h3>${s.title}</h3>
+        <p>${s.description}</p>
+      </div>
+    `).join('');
+
+    // 3. Render Teach Section
+    const teachBanner = document.getElementById('teachBanner');
+    teachBanner.innerHTML = `
+      <div class="teach-content">
+        <h2>${data.teach.title}</h2>
+        <p>${data.teach.description}</p>
+        <ul class="teach-list">
+          ${data.teach.list.map(item => `<li><svg><use href="#i-check"/></svg> ${item}</li>`).join('')}
+        </ul>
+      </div>
+    `;
+
+    // 4. Re-initialize the intersection observer for newly injected elements
+    $$('[data-r]').forEach(e=>io.observe(e));
+
+  } catch (error) {
+    console.error('Error loading skills data:', error);
+    // Fallback text
+    document.getElementById('skillsGrid').innerHTML = `
+      <div style="grid-column: 1/-1; text-align:center; padding: 40px; color: var(--muted);">
+        <p>Unable to load skills. Please ensure the site is running on a local server.</p>
+      </div>
+    `;
+  }
+}
+
+/* ============ BACK TO TOP LOGIC ============ */
+const backToTopBtn = $('#backToTop');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    backToTopBtn.classList.add('show');
+  } else {
+    backToTopBtn.classList.remove('show');
+  }
+}, { passive: true });
+
+backToTopBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
+// Start loading data
+document.addEventListener('DOMContentLoaded', loadSkillsData);
+</script>
+</body>
+</html>

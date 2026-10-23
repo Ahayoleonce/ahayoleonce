@@ -1,0 +1,26 @@
+[
+  {
+    "date": "2025 – Present",
+    "title": "Software Engineer",
+    "subtitle": "Freelance / Contract",
+    "description": "Building full-stack web and mobile applications. Designing robust backend APIs, managing databases, and deploying scalable solutions for clients worldwide."
+  },
+  {
+    "date": "2023 – 2024",
+    "title": "BSc Computer Engineering",
+    "subtitle": "University Graduation",
+    "description": "Completed my degree with a focus on embedded systems, networking, and software architecture. Built my first complex IoT and web projects."
+  },
+  {
+    "date": "2022",
+    "title": "Tech Intern",
+    "subtitle": "Hardware & IoT Lab",
+    "description": "Worked on circuit design and microcontrollers. Bridged the gap between low-level hardware coding in C++ and high-level Python automation."
+  },
+  {
+    "date": "2020 – 2021",
+    "title": "Started Coding",
+    "subtitle": "Self-Taught Journey",
+    "description": "Wrote my very first lines of Python and HTML. Fell in love with problem-solving and the ability to build functional things from scratch."
+  }
+]

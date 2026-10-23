@@ -1,0 +1,37 @@
+[
+  {
+    "platform": "WhatsApp",
+    "url": "https://wa.me/250795214659?text=Hello%20AHAYO,%20I%20found%20your%20portfolio%20and%20I'd%20like%20to%20talk%20to%20you.",
+    "icon": "i-whatsapp",
+    "label": "+250 795 214 659",
+    "brand": "wa"
+  },
+  {
+    "platform": "Instagram",
+    "url": "https://instagram.com/ah.leonce",
+    "icon": "i-instagram",
+    "label": "@ah.leonce",
+    "brand": "insta"
+  },
+  {
+    "platform": "LinkedIn",
+    "url": "https://www.linkedin.com/in/ahayo-leonce",
+    "icon": "i-linkedin",
+    "label": "Connect professionally",
+    "brand": "li"
+  },
+  {
+    "platform": "GitHub",
+    "url": "https://github.com/ahayoleonce",
+    "icon": "i-github",
+    "label": "Check my code",
+    "brand": "gh"
+  },
+  {
+    "platform": "Email",
+    "url": "mailto:leonceahayo001@gmail.com",
+    "icon": "i-mail",
+    "label": "leonceahayo001@gmail.com",
+    "brand": "mail"
+  }
+]

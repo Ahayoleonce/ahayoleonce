@@ -1,0 +1,13 @@
+{
+  "heading": "I turn ideas into working systems.",
+  "paragraphs": [
+    "I'm AHAYO Leonce, a computer engineer. I enjoy the full stack of computing: building web, desktop and Android apps, designing databases and APIs, and connecting code to real hardware.",
+    "I care about simple designs, readable code and products people can rely on. Whether it's a cloud backend, a mobile interface, or a circuit board, I build systems that solve real problems."
+  ],
+  "startYearCoding": 2023,
+  "projectsBuilt": 24,
+  "images": [
+    "leo.png",
+    "profile.png"
+  ]
+}

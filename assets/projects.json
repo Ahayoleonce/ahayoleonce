@@ -1,0 +1,282 @@
+[
+  {
+    "cat": "web",
+    "title": "Learning Platform",
+    "desc": "A responsive e-learning site featuring course catalogs, video progress tracking, and automated certificate generation.",
+    "tags": ["React", "Node.js", "MySQL"],
+    "img": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1000&auto=format&fit=crop"
+  },
+  {
+    "cat": "web",
+    "title": "Student Records System",
+    "desc": "A secure web portal for administrators to manage student data, input results, and generate PDF reports with role-based access.",
+    "tags": ["Java", "Spring", "MySQL"],
+    "img": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop"
+  },
+  {
+    "cat": "web",
+    "title": "E-Commerce Platform",
+    "desc": "A complete online store with product management, cart, checkout, and payment gateway integration.",
+    "tags": ["Vue", "Node.js", "Stripe"],
+    "img": "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1000&auto=format&fit=crop"
+  },
+  {
+    "cat": "web",
+    "title": "Real-time Chat App",
+    "desc": "A messaging platform with private rooms, file sharing, and live typing indicators using WebSockets.",
+    "tags": ["React", "Socket.io", "MongoDB"],
+    "img": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1000&auto=format&fit=crop"
+  },
+  {
+    "cat": "web",
+    "title": "Portfolio Generator",
+    "desc": "A SaaS tool that allows developers to generate and host their own portfolio websites instantly.",
+    "tags": ["Next.js", "Tailwind", "Vercel"],
+    "img": "https://images.unsplash.com/photo-1507238692062-8a0345c1b5f2?q=80&w=1000&auto=format&fit=crop"
+  },
+  {
+    "cat": "web",
+    "title": "Task Management Dashboard",
+    "desc": "A Kanban-style project management tool for teams with drag-and-drop, deadlines, and notifications.",
+    "tags": ["React", "Firebase", "DnD"],
+    "img": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop"
+  },
+  {
+    "cat": "web",
+    "title": "Blog CMS",
+    "desc": "A custom content management system with a rich text editor, image uploading, and markdown support.",
+    "tags": ["PHP", "Laravel", "MySQL"],
+    "img": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=1000&auto=format&fit=crop"
+  },
+  {
+    "cat": "web",
+    "title": "Weather Dashboard",
+    "desc": "A beautiful weather app consuming OpenWeather API with a 5-day forecast and geolocation.",
+    "tags": ["JavaScript", "API", "CSS"],
+    "img": "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?q=80&w=1000&auto=format&fit=crop"
+  },
+  {
+    "cat": "web",
+    "title": "Booking System",
+    "desc": "A hotel reservation platform with room availability, booking management, and admin panel.",
+    "tags": ["React", "Express", "PostgreSQL"],
+    "img": "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1000&auto=format&fit=crop"
+  },
+  {
+    "cat": "web",
+    "title": "URL Shortener",
+    "desc": "A high-performance link shortener with click analytics and custom alias generation.",
+    "tags": ["Node.js", "Redis", "MongoDB"],
+    "img": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=1000&auto=format&fit=crop"
+  },
+  {
+    "cat": "mobile",
+    "title": "Campus Android App",
+    "desc": "A mobile application for university students to view timetables, check exam results, and receive push notifications.",
+    "tags": ["Kotlin", "Firebase", "Material"],
+    "img": "https://images.unsplash.com/photo-1526498460520-4c246339dccb?q=80&w=1000&auto=format&fit=crop"
+  },
+  {
+    "cat": "mobile",
+    "title": "Fitness Tracker",
+    "desc": "An Android app that tracks steps, calories, and workouts using device sensors and charts progress.",
+    "tags": ["Kotlin", "Room", "MPAndroidChart"],
+    "img": "https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?q=80&w=1000&auto=format&fit=crop"
+  },
+  {
+    "cat": "mobile",
+    "title": "Food Delivery App",
+    "desc": "A food ordering app with restaurant listings, cart management, and real-time order tracking.",
+    "tags": ["React Native", "Node.js", "Maps"],
+    "img": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1000&auto=format&fit=crop"
+  },
+  {
+    "cat": "mobile",
+    "title": "Expense Tracker",
+    "desc": "A personal finance app to log daily expenses, categorize spending, and view monthly reports.",
+    "tags": ["Flutter", "SQLite", "Charts"],
+    "img": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1000&auto=format&fit=crop"
+  },
+  {
+    "cat": "mobile",
+    "title": "Language Learning App",
+    "desc": "A gamified mobile app for learning new languages with flashcards and daily streaks.",
+    "tags": ["Kotlin", "Firebase", "Animations"],
+    "img": "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?q=80&w=1000&auto=format&fit=crop"
+  },
+  {
+    "cat": "mobile",
+    "title": "QR Scanner & Generator",
+    "desc": "A utility app to scan QR codes, generate custom ones, and save history.",
+    "tags": ["Android", "ZXing", "Java"],
+    "img": "https://images.unsplash.com/photo-1595054607009-cabeb4b3c637?q=80&w=1000&auto=format&fit=crop"
+  },
+  {
+    "cat": "mobile",
+    "title": "Recipe Finder",
+    "desc": "Search for recipes based on ingredients you have at home, with detailed instructions.",
+    "tags": ["React Native", "API", "Expo"],
+    "img": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=1000&auto=format&fit=crop"
+  },
+  {
+    "cat": "mobile",
+    "title": "Offline Notes App",
+    "desc": "A lightweight notes app with local storage, search, and dark mode support.",
+    "tags": ["Kotlin", "Room", "Jetpack"],
+    "img": "https://images.unsplash.com/photo-1517842645767-c639042777db?q=80&w=1000&auto=format&fit=crop"
+  },
+  {
+    "cat": "hardware",
+    "title": "Smart Monitoring System",
+    "desc": "An IoT device that reads environmental sensors and streams live telemetry data to a centralized web dashboard via MQTT.",
+    "tags": ["Arduino", "C++", "MQTT"],
+    "img": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1000&auto=format&fit=crop"
+  },
+  {
+    "cat": "hardware",
+    "title": "Home Automation Hub",
+    "desc": "A Raspberry Pi-based hub that allows local network control of lights and appliances using a custom-built Python server.",
+    "tags": ["Raspberry Pi", "Python", "MQTT"],
+    "img": "https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=1000&auto=format&fit=crop"
+  },
+  {
+    "cat": "hardware",
+    "title": "Smart Plant Waterer",
+    "desc": "An automated watering system that monitors soil moisture and activates a water pump when dry.",
+    "tags": ["Arduino", "Sensors", "C++"],
+    "img": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?q=80&w=1000&auto=format&fit=crop"
+  },
+  {
+    "cat": "hardware",
+    "title": "RFID Access Control",
+    "desc": "A door lock system using RFID cards, a solenoid lock, and an Arduino microcontroller for authentication.",
+    "tags": ["Arduino", "RFID", "Security"],
+    "img": "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?q=80&w=1000&auto=format&fit=crop"
+  },
+  {
+    "cat": "hardware",
+    "title": "Weather Station",
+    "desc": "A DIY weather station that measures temperature, humidity, and pressure, displaying data on an LCD.",
+    "tags": ["ESP32", "Sensors", "LCD"],
+    "img": "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?q=80&w=1000&auto=format&fit=crop"
+  },
+  {
+    "cat": "hardware",
+    "title": "Smart Trash Bin",
+    "desc": "An ultrasonic sensor-based trash bin that opens its lid automatically when a person approaches.",
+    "tags": ["Arduino", "Ultrasonic", "Servo"],
+    "img": "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?q=80&w=1000&auto=format&fit=crop"
+  },
+  {
+    "cat": "hardware",
+    "title": "Gesture Controlled Robot",
+    "desc": "A robot car controlled by hand gestures using an accelerometer and wireless communication.",
+    "tags": ["Arduino", "MPU6050", "Robotics"],
+    "img": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1000&auto=format&fit=crop"
+  },
+  {
+    "cat": "hardware",
+    "title": "Digital Doorbell",
+    "desc": "A smart doorbell that sends notifications to a phone and captures a photo of the visitor.",
+    "tags": ["Raspberry Pi", "Camera", "IoT"],
+    "img": "https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=1000&auto=format&fit=crop"
+  },
+  {
+    "cat": "desktop",
+    "title": "Inventory Desktop App",
+    "desc": "A robust desktop application for a local business to track stock, manage sales, and flag low-inventory items offline.",
+    "tags": ["Java", "JavaFX", "SQLite"],
+    "img": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop"
+  },
+  {
+    "cat": "desktop",
+    "title": "POS System",
+    "desc": "A point-of-sale desktop application for retail stores with barcode scanning and receipt printing.",
+    "tags": ["C#", "WPF", "SQL Server"],
+    "img": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1000&auto=format&fit=crop"
+  },
+  {
+    "cat": "desktop",
+    "title": "File Organizer",
+    "desc": "A Python automation tool that sorts files into folders based on extension, date, or custom rules.",
+    "tags": ["Python", "Tkinter", "Automation"],
+    "img": "https://images.unsplash.com/photo-1618044733300-9472054094ee?q=80&w=1000&auto=format&fit=crop"
+  },
+  {
+    "cat": "desktop",
+    "title": "Code Editor",
+    "desc": "A lightweight text editor with syntax highlighting, file tree, and integrated terminal.",
+    "tags": ["Electron", "JS", "Monaco"],
+    "img": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1000&auto=format&fit=crop"
+  },
+  {
+    "cat": "desktop",
+    "title": "Media Player",
+    "desc": "A video and audio player with playlist management and custom themes.",
+    "tags": ["C++", "Qt", "FFmpeg"],
+    "img": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?q=80&w=1000&auto=format&fit=crop"
+  },
+  {
+    "cat": "desktop",
+    "title": "Backup Utility",
+    "desc": "A tool that automatically backs up files to an external drive or cloud with scheduling.",
+    "tags": ["Python", "PyQt", "Cloud"],
+    "img": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=1000&auto=format&fit=crop"
+  },
+  {
+    "cat": "ai",
+    "title": "AI Chatbot",
+    "desc": "A customer support chatbot powered by LLMs with context-aware responses.",
+    "tags": ["Python", "OpenAI", "LangChain"],
+    "img": "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1000&auto=format&fit=crop"
+  },
+  {
+    "cat": "ai",
+    "title": "Image Classifier",
+    "desc": "A CNN model trained to classify different types of clothing using the Fashion-MNIST dataset.",
+    "tags": ["TensorFlow", "Keras", "Python"],
+    "img": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=1000&auto=format&fit=crop"
+  },
+  {
+    "cat": "ai",
+    "title": "Sentiment Analysis",
+    "desc": "An NLP model that analyzes text (tweets/reviews) and determines positive, negative, or neutral sentiment.",
+    "tags": ["NLTK", "Python", "Scikit"],
+    "img": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1000&auto=format&fit=crop"
+  },
+  {
+    "cat": "ai",
+    "title": "Face Recognition",
+    "desc": "A real-time face detection and recognition system using OpenCV and deep learning.",
+    "tags": ["OpenCV", "Python", "PyTorch"],
+    "img": "https://images.unsplash.com/photo-1527430253228-e93688616381?q=80&w=1000&auto=format&fit=crop"
+  },
+  {
+    "cat": "ai",
+    "title": "Recommendation Engine",
+    "desc": "A collaborative filtering system that suggests products based on user behavior.",
+    "tags": ["Python", "Pandas", "Scikit"],
+    "img": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop"
+  },
+  {
+    "cat": "ai",
+    "title": "Handwriting OCR",
+    "desc": "Optical Character Recognition system that converts handwritten text into digital format.",
+    "tags": ["Tesseract", "OpenCV", "Python"],
+    "img": "https://images.unsplash.com/photo-1501504905252-473c47e087f8?q=80&w=1000&auto=format&fit=crop"
+  },
+  {
+    "cat": "ai",
+    "title": "Voice Assistant",
+    "desc": "A Python-based voice assistant that recognizes speech and performs tasks like web search.",
+    "tags": ["SpeechRecognition", "Python", "APIs"],
+    "img": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1000&auto=format&fit=crop"
+  },
+  {
+    "cat": "ai",
+    "title": "Predictive Analytics Model",
+    "desc": "A regression model predicting housing prices based on historical data and features.",
+    "tags": ["Scikit-learn", "Pandas", "ML"],
+    "img": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop"
+  }
+]

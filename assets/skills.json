@@ -1,0 +1,63 @@
+{
+  "skillsGrid": [
+    {
+      "title": "Frontend Engineering",
+      "icon": "i-layout",
+      "tags": ["React", "Vue", "HTML5", "CSS3", "JavaScript", "TypeScript", "Tailwind"]
+    },
+    {
+      "title": "Backend & Databases",
+      "icon": "i-server",
+      "tags": ["Node.js", "Python", "Java", "Spring", "REST APIs", "MySQL", "PostgreSQL"]
+    },
+    {
+      "title": "Mobile Development",
+      "icon": "i-smartphone",
+      "tags": ["Kotlin", "Android Studio", "React Native", "Firebase", "Material Design"]
+    },
+    {
+      "title": "Embedded & IoT",
+      "icon": "i-cpu",
+      "tags": ["Arduino", "Raspberry Pi", "C / C++", "MQTT", "Sensor Integration", "Circuit Design"]
+    },
+    {
+      "title": "AI & Machine Learning",
+      "icon": "i-brain",
+      "tags": ["Python", "TensorFlow", "PyTorch", "Model Training", "OpenAI API", "Data Processing"]
+    }
+  ],
+  "whatICanDo": [
+    {
+      "title": "Build Web Applications",
+      "icon": "i-code",
+      "description": "I design and build fast, responsive web platforms and robust backend APIs that handle real traffic and data."
+    },
+    {
+      "title": "Develop Mobile Apps",
+      "icon": "i-smartphone",
+      "description": "I create native Android applications with clean, intuitive interfaces and seamless backend integration."
+    },
+    {
+      "title": "Engineer IoT Systems",
+      "icon": "i-cpu",
+      "description": "I connect software to the physical world, building embedded devices that collect, process, and stream live sensor data."
+    },
+    {
+      "title": "Develop AI & Train Models",
+      "icon": "i-brain",
+      "description": "I integrate AI capabilities into apps, process datasets, and train machine learning models for specific tasks."
+    }
+  ],
+  "teach": {
+    "title": "I can teach also.",
+    "description": "I believe knowledge grows when shared. I offer structured, friendly mentorship specifically for students in <strong>CSA, NIT, and SOD</strong>, helping you bridge the gap between theory and real-world engineering.",
+    "list": [
+      "Programming Fundamentals",
+      "Web & Mobile Development",
+      "AI Development",
+      "Training AI Models",
+      "Arduino & IoT for Beginners",
+      "1-on-1 Project Mentorship"
+    ]
+  }
+}
